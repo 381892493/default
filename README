@@ -1,1 +1,6 @@
-My Project
+1 本地添加/修改了文件 尚未git add 的 使用  git clean -df 恢复所有的文件/目录
+单独恢复制定的文件 使用 git checkout -- 文件名
+2 git log --oneline 查看当前版本号
+3 已经add的修改 撤销提交 恢复为修改的状态 git reset . 所有  git reset . 或者是 制定文件 或者是版本号
+4 git add . 增加所有
+5 已经提交的 撤销提交 git log --oneline  git reset HEAD^  直接恢复到位add的版本。。
