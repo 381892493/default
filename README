@@ -12,3 +12,79 @@
 
 
 1 hg diff    hg diff -r 6993ee0de9d2  版本号
+mercurial是分布式的版本控制系统，在此列出开发过程中常用的命令。
+
+一、正常流程
+
+1、查看项目状态
+
+hg st
+
+2、将未加入索引的文件加入索引
+
+hg add 文件  
+
+或者 hg add . 将所有的加入索引中
+
+3、提交修改
+
+hg ci -m "提交说明"
+
+4、初次推送代码
+
+hg push --new-branch
+
+5、非初次推送代码
+
+hg  push -b 分支号
+
+二、分支管理
+
+1、新建分支
+
+hg branch  分支号
+
+2、查看当前分支
+
+hg branch 
+
+3、查看所有分支
+
+hg branches
+
+4、切换分支
+
+hg update 新分支号
+
+5、合并分支
+
+hg merge 分支号
+
+或者 hg merge  ，即是不加分支号，此时合并自己分支的多个head头，多用于多人操作同一分支后，进行合并操作
+
+三、更新操作
+
+1、更新当前项目状态
+
+hg update 
+
+2、更新代码
+
+hg pull
+
+四、回退操作
+
+1、代码未提交时（即没有进行 hg ci -m “提交" 操作），还原代码
+
+hg revert 文件名 
+
+或者 hg revert -a 还原所有修改
+
+2、代码提交了一次，还原提交，此时修改的代码还在，特别注意，此操作只能还原一次，多次是不行的
+
+hg rollback 
+--------------------- 
+作者：panda-star 
+来源：CSDN 
+原文：https://blog.csdn.net/chinabestchina/article/details/76401588 
+版权声明：本文为博主原创文章，转载请附上博文链接！
