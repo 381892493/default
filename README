@@ -1,11 +1,22 @@
 1 本地添加/修改了文件 尚未git add 的 使用  git clean -df 恢复所有的文件/目录
 单独恢复制定的文件 使用 git checkout -- 文件名
-2 git log --oneline 查看当前版本号
-3 已经add的修改 撤销提交 恢复为修改的状态 git reset . 所有  git reset . 或者是 制定文件 或者是版本号
+2 git log --oneline 查看当前版本号 | -p 查看差异 | -2 最近的两次提交
+3 已经add的修改 撤销提交 恢复为修改的状态 git reset . 所有  git reset . 或者是 指定文件 或者是版本号
 4 git add . 增加所有
 5 已经提交的 撤销提交 git log --oneline  git reset HEAD^  直接恢复到位add的版本。。
 6 git diff 不加参数即默认比较工作区与暂存区 未add的比较
 7 git diff + heade 与这个版本比较差异
+8 $ git commit -m 'initial commit'
+$ git add forgotten_file
+$ git commit --amend    这种只会有1个提交记录
+git commit -a 执行添加和提交
+9 git push origin master  推送master分支到远程仓库名为 origin
+10 git remote rename pb paul 重命名一个远程仓库，
+git remote add pb https://github.com/paulboone/ticgit 添加一个远程仓库，命名为pd  
+如果你使用 clone 命令克隆了一个仓库，命令会自动将其添加为远程仓库并默认以 “origin” 为简写。
+11 git tag -a v1.4 -m 'my version 1.4'  附注标签  git show v1.4 能看到信息
+12 git config --global alias.st status 别名st
+13 $ git branch testing 创建分支 git checkout 切换分支
 
 
 
