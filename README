@@ -16,7 +16,8 @@ git commit -am 'sfdsf' 执行添加和提交 (只限制非新文件 就是已经
 git remote add pb https://github.com/paulboone/ticgit 添加一个远程仓库，命名为pd  
 如果你使用 clone 命令克隆了一个仓库，命令会自动将其添加为远程仓库并默认以 “origin” 为简写。
 11 git tag -a v1.4 -m 'my version 1.4'  附注标签  git show v1.4 能看到信息 
-git push origin --tags 推送全部的分支 | git push origin v1.0 推送这个分支
+git push origin --tags 推送全部的分支 | git push origin v1.0 推送这个分支 
+通过git push origin master –force强制提交当前版本号，以达到撤销版本号的目的： 一般不建议使用这个命令
 12 git config --global alias.st status 别名st
 13 $ git branch testing 创建分支 git checkout 切换分支 git checkout -b iss53 创建并切换分支 
 git branch -d hotfix 删除分支
