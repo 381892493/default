@@ -1,8 +1,4 @@
 sdsdf
-sdf
-sf
-sd
-f
 fsd sdf dsf 1df
 sdfsd
 f
