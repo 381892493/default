@@ -3,7 +3,8 @@
 2 git log --oneline 查看当前版本号 | -p 查看差异 | -2 最近的两次提交
 3 已经add的修改 撤销提交 恢复为修改的状态 git reset . 所有  git reset . 或者是 指定文件 或者是版本号
 4 git add . 增加所有
-5 已经提交的 撤销提交 git log --oneline  git reset HEAD^  直接恢复到位add的版本。。
+5 已经提交的 撤销提交 git log --oneline  git reset HEAD^  直接恢复到位add的版本。。。注意和下面的区别 
+git reset --hard 82283b0  恢复到这个提交过的版本 应用更多的是这个。
 6 git diff 不加参数即默认比较工作区与暂存区 未add的比较
 7 git diff + heade 与这个版本比较差异
 8 $ git commit -m 'initial commit'
