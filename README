@@ -20,7 +20,7 @@ git push origin --tags 推送全部的分支 | git push origin v1.0 推送这个
 通过git push origin master –force强制提交当前版本号，以达到撤销版本号的目的： 一般不建议使用这个命令
 12 git config --global alias.st status 别名st
 13 $ git branch testing 创建分支 git checkout 切换分支 git checkout -b iss53 创建并切换分支 
-git branch -d hotfix 删除分支
+git branch -d hotfix(分支名) 删除分支
 14 并不是你不想提交，而是工作只进行到一半，还没法提交，预计完成还需1天时间。但是，必须在两个小时内修复该bug，怎么办？
 
 幸好，Git还提供了一个stash功能，可以把当前工作现场“储藏”起来，等以后恢复现场后继续工作：
