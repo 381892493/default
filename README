@@ -1,5 +1,5 @@
-1 本地添加/修改了文件 尚未git add 的 使用  git clean -df 恢复所有的文件/目录
-单独恢复制定的文件(只限于修改文件的恢复，如果是新增的文件是没有这个命令的) 使用 git checkout -- 文件名,git checkout . 恢复当前所有的修改
+1 本地添加了文件 尚未git add 的 使用  git clean -df   恢复所有的文件/目录 //////
+单独恢复制定的文件(只限于修改文件的恢复，如果是新增的文件是没有这个命令git clean -df 的) 修改文件 使用 git checkout -- 文件名,git checkout . 恢复当前所有的修改
 2 git log --oneline 查看当前版本号 | -p 查看差异 | -2 最近的两次提交
 3 已经add的修改 撤销add 恢复为修改的状态 git reset . 所有 | git reset HEAD 文件名 
 4 git add . 增加所有
